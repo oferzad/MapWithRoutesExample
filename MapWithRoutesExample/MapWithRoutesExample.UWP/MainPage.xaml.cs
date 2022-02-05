@@ -20,8 +20,8 @@ namespace MapWithRoutesExample.UWP
         public MainPage()
         {
             this.InitializeComponent();
-            //Maps key - AmXQdUA8yDAhmiRdH90spOr9fsp0YMx4rDk_A8CgH4tWpXK4Xklm7R9mfH8-F3Yu
-            Xamarin.FormsMaps.Init("AmXQdUA8yDAhmiRdH90spOr9fsp0YMx4rDk_A8CgH4tWpXK4Xklm7R9mfH8-F3Yu");
+            //Maps key 
+            Xamarin.FormsMaps.Init(MapWithRoutesExample.Constants.BingApiKey);
 
             LoadApplication(new MapWithRoutesExample.App());
         }

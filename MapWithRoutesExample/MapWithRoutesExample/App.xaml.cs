@@ -5,13 +5,20 @@ using MapWithRoutesExample.Views;
 using MapWithRoutesExample.Services;
 namespace MapWithRoutesExample
 {
+    public class Constants
+    {
+        //Generate Google Api Key at: https://console.cloud.google.com/
+        //Generate Bing Api Key at: https://www.bingmapsportal.com/
+        public const string GoogleApiKey = "YOUR GOOGLE API KEY";
+        public const string BingApiKey = "YOUR BING API KEY";
+    }
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
             //Set up google map api key
-            GoogleMapsApiService.Initialize("AIzaSyC8mA7SxaosrTtXneUrPNH2HZtUga0vypA");
+            GoogleMapsApiService.Initialize(Constants.GoogleApiKey);
             MainPage = new ShowMap();
         }
 

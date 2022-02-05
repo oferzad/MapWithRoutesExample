@@ -7,7 +7,7 @@ using Android.OS;
 
 namespace MapWithRoutesExample.Droid
 {
-    //<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAo1LAX2ytjNPNcT1XhFLn3BUee27Pjr7g"/> 
+    
     [Activity(Label = "MapWithRoutesExample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
